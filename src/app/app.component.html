@@ -1,0 +1,10 @@
+ <h1>Chat de Debora y Madai</h1>
+ 
+ <input class="form-control" type="text" placeholder="message" [(ngModel)]="input">
+ 
+ <button class="btn btn-success" (click)="sendMessage()">Send</button>
+ <div class="content">
+   <div *ngFor="let msg of messageService.msg">
+     {{msg}}
+   </div>
+ </div>
